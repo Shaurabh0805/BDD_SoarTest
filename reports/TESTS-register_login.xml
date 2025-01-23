@@ -1,0 +1,21 @@
+<testsuite name="register_login.Load testing for client_register and client_login endpoints" tests="1" errors="0" failures="0" skipped="0" time="0.071223" timestamp="2025-01-23T15:04:31.031823" hostname="DESKTOP-5BBGK3G"><testcase classname="register_login.Load testing for client_register and client_login endpoints" name="Register and login users" status="passed" time="0.071223"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: Register and login users
+    Given I have endpoints for registration and login ... passed in 0.001s
+    When I register users with random data ... passed in 0.068s
+    When I login with random user credentials ... passed in 0.001s
+    Then the login should succeed ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Login attempt for vopYA@example.com returned status 200 with body {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InZvcFlBIiwiZW1haWwiOiJ2b3BZQUBleGFtcGxlLmNvbSIsInJvbGUiOjJ9.BBQcqMDLZufxmlpPmZnw5mECD2f1pi_sHgSufWsHOLY"}
+
+Login succeeded
+
+]]>
+</system-out></testcase></testsuite>
